@@ -60,3 +60,22 @@ const hello = (msg:string) :void =>{
     console.log(msg);
 }
 hello('World..!');
+
+//defult parameter
+function sum(numberOne:number, numberTwo:number =10):void{
+    console.log(numberOne+numberTwo);
+}
+
+sum(10);
+sum(10,20);
+
+//rest parameters
+function sum2(...values:number[]):number{
+    let count:number = 0;
+    for(let temp of values){
+        count+=temp;
+    }
+    return count;
+}
+
+console.log(`Rest Function sum: ${sum2(10,20,30,40)}`);

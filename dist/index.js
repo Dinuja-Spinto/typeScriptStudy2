@@ -38,3 +38,16 @@ const hello = (msg) => {
     console.log(msg);
 };
 hello('World..!');
+function sum(numberOne, numberTwo = 10) {
+    console.log(numberOne + numberTwo);
+}
+sum(10);
+sum(10, 20);
+function sum2(...values) {
+    let count = 0;
+    for (let temp of values) {
+        count += temp;
+    }
+    return count;
+}
+console.log(`Rest Function sum: ${sum2(10, 20, 30, 40)}`);
