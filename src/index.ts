@@ -28,3 +28,22 @@ const rate:number = 1.5;
 //type inference
 let myName = 'dinuja';
 console.log(typeof myName);
+
+//array
+let numbers:number[] = [10,20,30,40];
+console.log(numbers[0]);
+
+let strings: Array<string>=['','','',''];
+strings.push('10'); //add
+strings.pop();//rid the last element
+
+//==> tuple
+let student2:[string,number]=['Dinuja', 20];
+
+for(let i = 0; i< numbers.length; i++){
+    console.log(numbers[i]);
+}
+
+for (let temp of numbers){
+    console.log(temp);
+}

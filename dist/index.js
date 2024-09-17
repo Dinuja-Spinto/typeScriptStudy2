@@ -18,3 +18,15 @@ console.log(myAge);
 const rate = 1.5;
 let myName = 'dinuja';
 console.log(typeof myName);
+let numbers = [10, 20, 30, 40];
+console.log(numbers[0]);
+let strings = ['', '', '', ''];
+strings.push('10');
+strings.pop();
+let student2 = ['Dinuja', 20];
+for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+}
+for (let temp of numbers) {
+    console.log(temp);
+}
