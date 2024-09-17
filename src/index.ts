@@ -47,3 +47,16 @@ for(let i = 0; i< numbers.length; i++){
 for (let temp of numbers){
     console.log(temp);
 }
+
+//--> functions
+function sayHello(message:string):void{
+    console.log(`Message: ${message}`);
+}
+
+sayHello('Hi Dinuja');
+
+//arrow function
+const hello = (msg:string) :void =>{
+    console.log(msg);
+}
+hello('World..!');

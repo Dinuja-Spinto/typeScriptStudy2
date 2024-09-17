@@ -30,3 +30,11 @@ for (let i = 0; i < numbers.length; i++) {
 for (let temp of numbers) {
     console.log(temp);
 }
+function sayHello(message) {
+    console.log(`Message: ${message}`);
+}
+sayHello('Hi Dinuja');
+const hello = (msg) => {
+    console.log(msg);
+};
+hello('World..!');
