@@ -16,3 +16,5 @@ function getAgeAfter3Y(age, name) {
 let myAge = getAgeAfter3Y(10);
 console.log(myAge);
 const rate = 1.5;
+let myName = 'dinuja';
+console.log(typeof myName);

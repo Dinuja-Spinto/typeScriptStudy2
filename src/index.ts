@@ -24,3 +24,7 @@ let myAge:number = getAgeAfter3Y(10);
 console.log(myAge);
 //-----------
 const rate:number = 1.5;
+
+//type inference
+let myName = 'dinuja';
+console.log(typeof myName);
