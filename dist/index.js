@@ -73,3 +73,12 @@ const emp2 = {
     }
 };
 console.log(emp2.name);
+class AnimalWild {
+    constructor(name, age, address) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+}
+const wildAnimal = new AnimalWild('Tiger', 90, { city: 'Yala', postal: 10 });
+console.log(wildAnimal);
