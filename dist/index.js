@@ -64,3 +64,12 @@ console.log(emp.name);
 console.log(emp.age);
 console.log(emp.address);
 console.log(emp.address.city);
+const emp2 = {
+    name: 'DinujaS',
+    age: 20,
+    address: {
+        city: 'jaffna',
+        postal: 1212
+    }
+};
+console.log(emp2.name);

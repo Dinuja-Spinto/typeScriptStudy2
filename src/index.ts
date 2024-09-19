@@ -97,5 +97,22 @@ console.log(emp.age);
 console.log(emp.address);
 console.log(emp.address.city);
 
+//interface
+interface Emp{
+    name:string;
+    age:number;
+    address:{
+        city:string;
+        postal:number
+    };
+}
 
-
+const emp2: Emp ={
+    name:'DinujaS',
+    age:20,
+    address:{
+        city:'jaffna',
+        postal:1212
+    }
+}
+console.log(emp2.name);
