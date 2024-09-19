@@ -79,3 +79,5 @@ function sum2(...values:number[]):number{
 }
 
 console.log(`Rest Function sum: ${sum2(10,20,30,40)}`);
+
+//method override
