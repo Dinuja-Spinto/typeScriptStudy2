@@ -80,4 +80,22 @@ function sum2(...values:number[]):number{
 
 console.log(`Rest Function sum: ${sum2(10,20,30,40)}`);
 
-//method override
+//objects ===>
+//literals
+const emp={
+    name:'Dinuja',
+    age:20,
+    address:{
+        city:'jaffna',
+        postal:1212
+    }
+}
+
+console.log(emp);
+console.log(emp.name);
+console.log(emp.age);
+console.log(emp.address);
+console.log(emp.address.city);
+
+
+
