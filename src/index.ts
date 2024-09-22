@@ -257,3 +257,13 @@ interface shape<T>{
 let s1:shape<string>={type:'hello'}
 let s2:shape<number>={type:12}
 let s3:shape<boolean>={type:true}
+
+//generic constrain
+interface elementLength{
+    length:number;
+}
+function showLength<T extends elementLength>(value:T){
+    console.log(value.length);
+}
+showLength([10,20,30]);
+showLength('Muthu');

@@ -159,3 +159,8 @@ console.log(stringVal);
 let s1 = { type: 'hello' };
 let s2 = { type: 12 };
 let s3 = { type: true };
+function showLength(value) {
+    console.log(value.length);
+}
+showLength([10, 20, 30]);
+showLength('Muthu');
