@@ -153,3 +153,21 @@ class Dog{
 const d1 = new Dog("Rex", 10);
 d1.setAge(11);
 console.log(d1);
+
+//optional
+//readOnly
+interface Animal2{
+    name:string;
+    age?:number;//optional
+    readonly isActive:boolean;
+}
+const a1:Animal2={
+    name:'Dog',
+    isActive:true
+}
+const a2:Animal2={
+    name:'Dog',
+    age:10,
+    isActive: false
+}
+//a1.isActive =false; --> can not assign cause readOnly

@@ -96,3 +96,12 @@ class Dog {
 const d1 = new Dog("Rex", 10);
 d1.setAge(11);
 console.log(d1);
+const a1 = {
+    name: 'Dog',
+    isActive: true
+};
+const a2 = {
+    name: 'Dog',
+    age: 10,
+    isActive: false
+};
