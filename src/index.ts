@@ -264,6 +264,22 @@ interface elementLength{
 }
 function showLength<T extends elementLength>(value:T){
     console.log(value.length);
+    console.log(value);
 }
 showLength([10,20,30]);
 showLength('Muthu');
+
+//exceptions
+function dev(num1:number, num2:number){
+    if(num2==0)
+        throw new Error('wrong INput!');
+    return num1/num2;
+}
+try{
+    let answer = dev(10,10);
+    console.log(answer);
+}catch(error){
+    console.log(error);
+}finally{
+    console.log('finally');
+}

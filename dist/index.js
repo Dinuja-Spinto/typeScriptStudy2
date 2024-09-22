@@ -161,6 +161,22 @@ let s2 = { type: 12 };
 let s3 = { type: true };
 function showLength(value) {
     console.log(value.length);
+    console.log(value);
 }
 showLength([10, 20, 30]);
 showLength('Muthu');
+function dev(num1, num2) {
+    if (num2 == 0)
+        throw new Error('wrong INput!');
+    return num1 / num2;
+}
+try {
+    let answer = dev(10, 10);
+    console.log(answer);
+}
+catch (error) {
+    console.log(error);
+}
+finally {
+    console.log('finally');
+}
