@@ -82,3 +82,17 @@ class AnimalWild {
 }
 const wildAnimal = new AnimalWild('Tiger', 90, { city: 'Yala', postal: 10 });
 console.log(wildAnimal);
+class Dog {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    setAge(age) {
+        if (age < 0)
+            return;
+        this.age = age;
+    }
+}
+const d1 = new Dog("Rex", 10);
+d1.setAge(11);
+console.log(d1);

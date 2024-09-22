@@ -135,3 +135,21 @@ class AnimalWild{
 
 const wildAnimal = new AnimalWild('Tiger', 90, {city:'Yala', postal:10});
 console.log(wildAnimal);
+
+//encapsulation
+class Dog{
+    private name:string;
+    private age:number;
+    constructor(name:string, age:number){
+        this.name = name;
+        this.age =age;
+    }
+    public setAge(age:number){
+        if(age<0)
+            return;
+        this.age = age;
+    }
+}
+const d1 = new Dog("Rex", 10);
+d1.setAge(11);
+console.log(d1);
