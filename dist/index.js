@@ -149,3 +149,10 @@ class phone3 extends phone2 {
         console.log('FTP..!');
     }
 }
+function getData(value) {
+    return value;
+}
+let numberVal = getData(10);
+let stringVal = getData('Dinuja');
+console.log(numberVal);
+console.log(stringVal);

@@ -241,3 +241,13 @@ class phone3 extends phone2{
         
     }
 }
+
+//generics
+function getData<T>(value:T):T{
+    return value;
+}
+let numberVal=getData<number>(10);
+let stringVal=getData<string>('Dinuja');
+console.log(numberVal);
+console.log(stringVal);
+
