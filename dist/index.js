@@ -105,3 +105,5 @@ const a2 = {
     age: 10,
     isActive: false
 };
+const ranil = { name: 'Ranil', age: 82, canEng: true, isTheif: true };
+const anura = { name: 'Anura', age: 59, canEng: false };

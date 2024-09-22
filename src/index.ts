@@ -171,3 +171,18 @@ const a2:Animal2={
     isActive: false
 }
 //a1.isActive =false; --> can not assign cause readOnly
+
+//Inheritance -> extends
+interface Person{
+    name:string;
+    age:number;
+    canEng:boolean;
+}
+interface Ranil extends Person{
+    isTheif:boolean;
+}
+interface Anura extends Person{
+}
+
+const ranil:Ranil = {name:'Ranil',age:82,canEng:true,isTheif:true}
+const anura:Anura = {name:'Anura',age:59,canEng:false}
