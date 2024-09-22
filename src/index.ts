@@ -172,7 +172,7 @@ const a2:Animal2={
 }
 //a1.isActive =false; --> can not assign cause readOnly
 
-//Inheritance -> extends
+//extends
 interface Person{
     name:string;
     age:number;
@@ -186,3 +186,29 @@ interface Anura extends Person{
 
 const ranil:Ranil = {name:'Ranil',age:82,canEng:true,isTheif:true}
 const anura:Anura = {name:'Anura',age:59,canEng:false}
+
+//Inheritance
+class Animal10{
+    private name:string;
+    private age:number;
+    constructor(name:string, age:number){
+        this.name = name;
+        this.age = age;
+    }
+    public sound(): void {
+        console.log(`${this.name} sound`);
+    }
+}
+class Dog10 extends Animal10{
+    private breed:string;
+    constructor(name:string, age:number, breed:string){
+        super(name,age);
+        this.breed = breed;
+    }
+}
+let animal10 = new Animal10('Animal', 20);
+let dog10 = new Dog10('dog', 2, 'husky');
+console.log(animal10);
+console.log(dog10);
+animal10.sound();
+dog10.sound();

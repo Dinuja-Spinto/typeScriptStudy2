@@ -107,3 +107,24 @@ const a2 = {
 };
 const ranil = { name: 'Ranil', age: 82, canEng: true, isTheif: true };
 const anura = { name: 'Anura', age: 59, canEng: false };
+class Animal10 {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    sound() {
+        console.log(`${this.name} sound`);
+    }
+}
+class Dog10 extends Animal10 {
+    constructor(name, age, breed) {
+        super(name, age);
+        this.breed = breed;
+    }
+}
+let animal10 = new Animal10('Animal', 20);
+let dog10 = new Dog10('dog', 2, 'husky');
+console.log(animal10);
+console.log(dog10);
+animal10.sound();
+dog10.sound();
