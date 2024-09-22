@@ -212,3 +212,32 @@ console.log(animal10);
 console.log(dog10);
 animal10.sound();
 dog10.sound();
+
+
+//abstraction
+abstract class phone1{
+    private displaySize:number;
+    constructor(dpSize:number){
+        this.displaySize = dpSize;
+    }
+    call():void{
+        console.log('Calling!...');
+        
+    }
+    message():void{
+        console.log('messaging..');
+    }
+    abstract fileTransfer():void;
+}
+abstract class phone2 extends phone1{
+    dance():void{
+        console.log('Dance..!');
+        
+    }
+}
+class phone3 extends phone2{
+    fileTransfer(): void {
+        console.log('FTP..!');
+        
+    }
+}

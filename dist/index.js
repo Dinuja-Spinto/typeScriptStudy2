@@ -128,3 +128,24 @@ console.log(animal10);
 console.log(dog10);
 animal10.sound();
 dog10.sound();
+class phone1 {
+    constructor(dpSize) {
+        this.displaySize = dpSize;
+    }
+    call() {
+        console.log('Calling!...');
+    }
+    message() {
+        console.log('messaging..');
+    }
+}
+class phone2 extends phone1 {
+    dance() {
+        console.log('Dance..!');
+    }
+}
+class phone3 extends phone2 {
+    fileTransfer() {
+        console.log('FTP..!');
+    }
+}
