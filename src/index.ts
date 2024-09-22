@@ -251,3 +251,9 @@ let stringVal=getData<string>('Dinuja');
 console.log(numberVal);
 console.log(stringVal);
 
+interface shape<T>{
+    type:T;
+}
+let s1:shape<string>={type:'hello'}
+let s2:shape<number>={type:12}
+let s3:shape<boolean>={type:true}

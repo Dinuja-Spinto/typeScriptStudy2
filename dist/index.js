@@ -156,3 +156,6 @@ let numberVal = getData(10);
 let stringVal = getData('Dinuja');
 console.log(numberVal);
 console.log(stringVal);
+let s1 = { type: 'hello' };
+let s2 = { type: 12 };
+let s3 = { type: true };
