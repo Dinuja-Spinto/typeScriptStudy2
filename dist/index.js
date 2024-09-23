@@ -180,3 +180,16 @@ catch (error) {
 finally {
     console.log('finally');
 }
+function setStringData(value) {
+    console.log(typeof value);
+}
+function setNumberData(value) {
+    console.log(typeof value);
+}
+setStringData('hello');
+setNumberData(10);
+function setData(value) {
+    console.log(typeof value);
+}
+setData('hello');
+setData(10);

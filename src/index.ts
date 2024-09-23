@@ -294,3 +294,10 @@ function setNumberData(value:number):void{
 
 setStringData('hello');
 setNumberData(10);
+
+function setData(value: string | number){
+    console.log(typeof value);
+}
+
+setData('hello');
+setData(10);
