@@ -283,3 +283,14 @@ try{
 }finally{
     console.log('finally');
 }
+
+//type guards
+function setStringData(value:string):void{
+    console.log(typeof value);
+}
+function setNumberData(value:number):void{
+    console.log(typeof value);
+}
+
+setStringData('hello');
+setNumberData(10);
