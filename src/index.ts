@@ -361,3 +361,30 @@ interface Bus extends Vehical{
 function executeV(vehical : Vehical){
     (vehical as Bus)
 }
+
+//union types
+interface Animalz{
+    name:string;
+}
+interface Dog11 extends Animalz{
+    name:'myDog',
+    height: number
+}
+interface Cat7 extends Animalz{
+    name:'myCat',
+    height: number
+}
+type myPet = Dog11 | Cat7;
+function triger(pet:myPet){
+    if(pet.name == 'myDog'){
+        console.log('Dog');
+    }else{
+        console.log('Cat');
+        
+    }
+}
+let myDog: Dog11 = {
+    name: 'myDog', 
+    height: 50     
+};
+triger(myDog);

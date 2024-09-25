@@ -234,3 +234,16 @@ function collectData(value) {
 function executeV(vehical) {
     vehical;
 }
+function triger(pet) {
+    if (pet.name == 'myDog') {
+        console.log('Dog');
+    }
+    else {
+        console.log('Cat');
+    }
+}
+let myDog = {
+    name: 'myDog',
+    height: 50
+};
+triger(myDog);
