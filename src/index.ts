@@ -284,7 +284,7 @@ try{
     console.log('finally');
 }
 
-//type guards
+//type guards -> type of
 function setStringData(value:string):void{
     console.log(typeof value);
 }
@@ -301,3 +301,25 @@ function setData(value: string | number){
 
 setData('hello');
 setData(10);
+
+//type guards -> instanceof
+class Dog9{
+    sound():void{
+        console.log('Baw Baw');
+    }
+}
+class Cat{
+    walk():void{
+        console.log('run');
+    }
+}
+
+function execute(value: Cat | Dog9){
+    if(value instanceof Cat){
+        value.walk();
+    }else{
+        value.sound();
+    }
+}
+execute(new Dog9());
+execute(new Cat());

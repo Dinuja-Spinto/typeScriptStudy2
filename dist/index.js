@@ -193,3 +193,23 @@ function setData(value) {
 }
 setData('hello');
 setData(10);
+class Dog9 {
+    sound() {
+        console.log('Baw Baw');
+    }
+}
+class Cat {
+    walk() {
+        console.log('run');
+    }
+}
+function execute(value) {
+    if (value instanceof Cat) {
+        value.walk();
+    }
+    else {
+        value.sound();
+    }
+}
+execute(new Dog9());
+execute(new Cat());
