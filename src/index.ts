@@ -344,3 +344,20 @@ function collectData(value: Dog8 | Cat8){
         console.log(value.age);
     }
 }
+
+//assertion (typeCasting)
+interface Vehical{
+    type:string;
+}
+interface Car extends Vehical{
+    drive():void;
+}
+interface Can extends Vehical{
+    start():void;
+}
+interface Bus extends Vehical{
+    stop():void;
+}
+function executeV(vehical : Vehical){
+    (vehical as Bus)
+}

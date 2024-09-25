@@ -231,3 +231,6 @@ function collectData(value) {
         console.log(value.age);
     }
 }
+function executeV(vehical) {
+    vehical;
+}
