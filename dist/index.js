@@ -247,3 +247,6 @@ let myDog = {
     height: 50
 };
 triger(myDog);
+const stdName = "name";
+const stdAge = "age";
+const stdActive = "isActive";

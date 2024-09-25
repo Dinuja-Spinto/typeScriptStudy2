@@ -388,3 +388,14 @@ let myDog: Dog11 = {
     height: 50     
 };
 triger(myDog);
+
+//key of
+interface student{
+    name:string;
+    age:number;
+    isActive:boolean;
+}
+type studentKeys = keyof student;
+const stdName:studentKeys="name";
+const stdAge:studentKeys="age";
+const stdActive:studentKeys="isActive";
