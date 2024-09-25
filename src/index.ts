@@ -399,3 +399,8 @@ type studentKeys = keyof student;
 const stdName:studentKeys="name";
 const stdAge:studentKeys="age";
 const stdActive:studentKeys="isActive";
+
+//type of
+const dinujaName = "Dinuja Pinto";
+type NameData=typeof studentName;
+const nimalName: NameData = 'nimal';

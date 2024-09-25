@@ -250,3 +250,5 @@ triger(myDog);
 const stdName = "name";
 const stdAge = "age";
 const stdActive = "isActive";
+const dinujaName = "Dinuja Pinto";
+const nimalName = 'nimal';
