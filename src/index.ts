@@ -323,3 +323,24 @@ function execute(value: Cat | Dog9){
 }
 execute(new Dog9());
 execute(new Cat());
+
+//type guards -> in
+class Dog8{
+    name:string;
+    constructor(name:string){
+        this.name = name;
+    }
+}
+class Cat8{
+    age:number;
+    constructor(age:number){
+        this.age = age;
+    }
+}
+function collectData(value: Dog8 | Cat8){
+    if('name' in value){
+        console.log(value.name);
+    } else{
+        console.log(value.age);
+    }
+}

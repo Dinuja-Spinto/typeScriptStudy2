@@ -213,3 +213,21 @@ function execute(value) {
 }
 execute(new Dog9());
 execute(new Cat());
+class Dog8 {
+    constructor(name) {
+        this.name = name;
+    }
+}
+class Cat8 {
+    constructor(age) {
+        this.age = age;
+    }
+}
+function collectData(value) {
+    if ('name' in value) {
+        console.log(value.name);
+    }
+    else {
+        console.log(value.age);
+    }
+}
